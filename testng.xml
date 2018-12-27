@@ -1,9 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="testSearch">
-    <test name="bingSearch">
+<suite name="Web Browser Testing">
+
+    <test name="Bing Search Testing">
+        <groups>
+            <run>
+                <include name = "BingTest" />
+            </run>
+        </groups>
         <classes>
-            <class name="testSearch" />
+            <class name="testWebBrowserSearch"/>
+        </classes>
+    </test>
+
+    <test name="Google Search Testing">
+        <groups>
+            <run>
+                <include name = "GoogleTest" />
+            </run>
+        </groups>
+        <classes>
+            <class name="testWebBrowserSearch"/>
+        </classes>
+    </test>
+
+    <test name="DuckDuckGo Search Testing">
+        <groups>
+            <run>
+                <include name = "DuckDuckTest" />
+            </run>
+        </groups>
+        <classes>
+            <class name="testWebBrowserSearch"/>
+        </classes>
+    </test>
+</suite>
+
+<suite name="Mobile Browser Testing">
+    <test name="Android/iOS Browser Testing">
+        <classes>
+            <class name="testMobileBrowserSearch"/>
         </classes>
     </test>
 </suite>
