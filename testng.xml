@@ -3,7 +3,7 @@
 <suite name="testSearch">
     <test name="bingSearch">
         <classes>
-            <class name="testBingSearch" />
+            <class name="testSearch" />
         </classes>
     </test>
 </suite>
